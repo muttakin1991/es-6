@@ -1,9 +1,21 @@
-const person = { name: 'jack william', age: 17, job: 'developer', gfName: 'Ema Watson', phone: 01717112211, address: 'new York',};
-const { phone, gfName, address, salary } = person;
-// const gfName = person.gfName;
-// const phone = person.phone;
-// console.log(gfName, phone, salary, address);
+const person = { name: 'jack willam', age : 17, job: "facebooker", gfName: "ema watson", address : "Dhanmondi", phone : 01711338153, friend: ['tom hankin', 'muttakin', 'shawon'] };
 
-const friends = ['sakib khan', 'salman khan', 'amir khan', 'arman khan', 'sharukh khan', 'habib khan',];
-const [chotoFriend, nextFriend, ...othersFriend] = friends;
-console.log(chotoFriend, nextFriend, othersFriend);
+const {phone, gfName, salary, address} = person;
+
+// console.log(phone, gfName, salary, address);
+
+const friends = ["shakin Khan", "arman Khan", "amir kan", "salman khan","sharukh khan"];
+const [chotoFrnd, nextFrnd,...restFrnds] = friends;
+// console.log(chotoFrnd, nextFrnd);
+// console.log(restFrnds);
+
+
+const complexObject = {
+    name: 'abe',
+    info: {
+        address: 'kolabangan',
+        leader: 'tigger',
+    }
+}
+const {leader} = complexObject.info;
+console.log(leader);
